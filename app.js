@@ -3,12 +3,10 @@ function zadanie1() {
 
     let n = parseInt(document.getElementById('zadanie1').value);
     let wynik = silnia_iter(n);
-    document.getElementById('wynik').innerHTML = "Silnia iteracyjnie: " + wynik;
-    console.log(wynik);
+    document.getElementById('wynik1').innerHTML = "Silnia iteracyjnie: " + wynik;
 
     let wynik2 = silnia_rek(n);
-    document.getElementById('wynik2').innerHTML += "Silnia rekurencyjnie: " + wynik2;
-    console.log(wynik2);
+    document.getElementById('wynik1').innerHTML += "<br><br>Silnia rekurencyjnie: " + wynik2;
     
 }
 
@@ -25,4 +23,21 @@ function silnia_rek(n) {
         return 1;
     }
     return n * silnia_rek(n - 1);
+}
+
+// 2. Funkcja która dodaje do siebie n liczb, podanych jako parametry funkcji. Wykorzystać do tego tablice arguments.
+
+function zadanie2() {
+
+    let wynik = suma(1, 2, 3, 4, 5);
+    document.getElementById('wynik2').innerHTML = "Suma: " + wynik;
+    
+}
+
+function suma() {
+    let wynik = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        wynik += arguments[i];
+    }
+    return wynik;
 }
