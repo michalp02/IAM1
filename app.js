@@ -85,11 +85,11 @@ function zadanie4() {
     
     let tekst = document.getElementById('zadanie4_tekst').value;
     let wynik = palindrom(tekst);
-    document.getElementById('wynik4').innerHTML = "Czy palindrom: " + wynik;
+    document.getElementById('wynik4').innerHTML = "Czy słowo jest panlindomem: " + (wynik ? "Tak" : "Nie");
 
     let liczba = parseInt(document.getElementById('zadanie4_liczba').value);
     let wynik2 = palindrom_liczb(liczba);
-    document.getElementById('wynik4').innerHTML += "<br><br>Czy palindrom liczbowy: " + wynik2;
+    document.getElementById('wynik4').innerHTML += "<br>Czy liczba jest panlindomem: " + (wynik2 ? "Tak" : "Nie");
     
 }
 
