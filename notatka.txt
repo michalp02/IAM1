@@ -1,0 +1,5 @@
+Paradygmaty programowania obiektowego (OOP):
+1. abstrakcja
+2. enkapsulacja (hermetyzacja)
+3. dziedziczenie
+4. polimorfizm
